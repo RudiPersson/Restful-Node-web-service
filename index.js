@@ -100,6 +100,12 @@ app.get('/api/lvs', (req, res) => {
 
 
 
+app.get('/', (req, res) => {
+    res.send('<h1>Hello guest</h1> <br> <p>To access <b>Bowlers:</b>/api/bowlers</p> <br> <p>To access <b>Tournaments:</b>/api/tournaments</p><br> <p>To access <b>LVS:</b>/api/lvs</p>');
+});
+
+
+
 
 // PORT
 const port = process.env.PORT || 3000;
